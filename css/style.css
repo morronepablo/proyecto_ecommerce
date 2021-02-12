@@ -451,61 +451,55 @@ VITRINA PRODUCTOS CUADRÍCULA
 .fontSize {
   font-size: 11px; }
 
+/*=============================================
+SLIDER PRODUCTOS
+=============================================*/
 .slider {
   max-width: 500px;
   margin-top: 5px;
   display: flex; }
-
-.slider .card {
-  background: #fff;
-  width: 145px;
-  margin: 0 0px; }
-
-.slider .card .img img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover; }
-
-.slider .card .content {
-  padding: 5px 10px; }
-
-.card .content .title {
-  text-align: center;
-  font-size: 12px;
-  font-weight: 600; }
-
-.card .content .sub-title {
-  text-align: center;
-  font-size: 9px;
-  font-weight: 600;
-  color: #e74c3c;
-  line-height: 10px; }
-
-.card .content p {
-  font-size: 7px;
-  text-align: justify;
-  margin: 2px 0;
-  width: 120px; }
-
-.card .content .btn {
-  display: block;
-  text-align: left;
-  margin: 5px 0; }
-
-.card .content .btn button {
-  background: #e74c3c;
-  color: #fff;
-  margin-left: 30px;
-  border: none;
-  outline: none;
-  font-size: 7px;
-  padding: 2px 4px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.2s; }
-
-.card .content .btn button:hover {
-  transform: scale(0.9); }
+  .slider .card {
+    background: #fff;
+    width: 145px;
+    margin: 0 0px; }
+    .slider .card .img img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+    .slider .card .content {
+      padding: 5px 10px; }
+      .slider .card .content .title {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600; }
+      .slider .card .content .sub-title {
+        text-align: center;
+        font-size: 9px;
+        font-weight: 600;
+        color: #e74c3c;
+        line-height: 10px; }
+      .slider .card .content p {
+        font-size: 7px;
+        text-align: justify;
+        margin: 2px 0;
+        width: 120px; }
+      .slider .card .content .btn {
+        display: block;
+        text-align: left;
+        margin: 5px 0; }
+        .slider .card .content .btn button {
+          background: #e74c3c;
+          color: #fff;
+          margin-left: 30px;
+          border: none;
+          outline: none;
+          font-size: 7px;
+          padding: 2px 4px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 0.2s; }
+        .slider .card .content .btn button:hover {
+          transform: scale(0.9); }
 
 /*=============================================
 ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
@@ -519,7 +513,21 @@ ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
 =============================================*/
 @media (max-width: 1199px) and (min-width: 992px) {
   .banner {
-    height: 260px; } }
+    height: 260px; }
+  .slider .card {
+    width: 120px; }
+  .card .content .title {
+    font-size: 11px; }
+  .card .content .sub-title {
+    font-size: 8px;
+    line-height: 10px; }
+  .card .content p {
+    font-size: 7px;
+    margin: 2px 0;
+    width: 110px; }
+  .card .content .btn button {
+    margin-left: 20px;
+    font-size: 7px; } }
 
 /*=============================================
 ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
@@ -537,7 +545,21 @@ ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
     font-size: 25px;
     line-height: 15px; }
   .banner .textoDer, .banner .textoIzq, .banner .textoCentro {
-    top: 35px; } }
+    top: 35px; }
+  .slider .card {
+    width: 110px; }
+  .card .content .title {
+    font-size: 10px; }
+  .card .content .sub-title {
+    font-size: 7px;
+    line-height: 5px; }
+  .card .content p {
+    font-size: 6px;
+    margin: 2px 0;
+    width: 90px; }
+  .card .content .btn button {
+    margin-left: 15px;
+    font-size: 6px; } }
 
 /*=============================================
 MOVIL (XS revisamos en 320px)
@@ -567,7 +589,9 @@ MOVIL (XS revisamos en 320px)
     position: absolute;
     left: 50%;
     width: 40%;
-    margin-left: -20%; } }
+    margin-left: -20%; }
+  #movil {
+    display: none; } }
 
 /*=============================================
 INFO-PRODUCTO
