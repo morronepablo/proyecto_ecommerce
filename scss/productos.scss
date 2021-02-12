@@ -1,0 +1,303 @@
+/*=============================================
+BANNER
+=============================================*/
+$bannerAlto: 50px;
+$bannerDerecha: 50px;
+$bannerIzquierda: 50px;
+
+.banner{
+	position: relative;
+	overflow:hidden;
+}
+
+.banner .textoBanner{
+	position:absolute;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.banner .textoDer{
+	top: $bannerAlto;
+	right: $bannerDerecha;
+	text-align:right;
+}
+
+.banner .textoIzq{
+	top: $bannerAlto;
+	left: $bannerIzquierda;
+	text-align:left;
+}
+
+.banner .textoCentro{
+	top: $bannerAlto;
+	left:50%;
+	width:800px;
+	margin-left: -400px;
+	text-align:center;
+}
+
+.textoBanner h1{
+	font-size:35px;
+	line-height:25px;
+}
+
+.textoBanner h2{
+	font-size:30px;
+	line-height:25px;
+}
+
+.textoBanner h3{
+	font-size:24px;
+	line-height:25px;
+}
+
+/*=============================================
+BARRA PRODUCTOS
+=============================================*/
+
+.barraProductos .organizarProductos span{
+	margin-left:5px;
+}
+
+/*=============================================
+VITRINA PRODUCTOS CUADRÍCULA
+=============================================*/
+
+.tituloDestacado h1 {
+    margin-top: -5px;
+}
+
+.tituloDestacado button {
+    span {
+        margin-left: 5px;
+    }
+}
+
+.productos ul {
+    li {
+        figure {
+            overflow: hidden;
+        }
+    }
+}
+
+.productos ul {
+    li {
+        div.precio {
+            padding: 0;
+            margin-top: -30px;
+            padding-bottom: 20px;
+        }
+
+        div.enlaces {
+            padding: 0;
+            padding-bottom: 20px;
+
+            button {
+                margin: 2px;
+
+                i {
+                    color: #999;
+                }
+            }
+        }
+
+        h4 {
+            small {
+                color: #777;
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: 500;
+
+                a {
+                    color: #777;
+                }
+            }
+        }
+
+        a {
+            img:hover {
+                transition: .3s all ease;
+                opacity: .8;
+                transform: scale(1.1, 1.1);
+            }
+        }
+    }
+}
+
+.oferta{
+	 text-decoration:line-through;
+	 color:#ccc;
+	 font-size:15px;
+}
+
+.fontSize{
+	font-size:11px;
+}
+
+
+
+
+
+
+
+.slider {
+    max-width: 500px;
+    margin-top: 5px;
+    display: flex;
+    
+}
+.slider .card {
+    background: #fff;
+    width: 145px;
+    margin: 0 0px;
+}
+.slider .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.slider .card .content {
+    padding: 5px 10px;
+}
+.card .content .title {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+.card .content .sub-title {
+    text-align: center;
+    font-size: 9px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 10px;
+}
+.card .content p {
+    font-size: 7px;
+    text-align: justify;
+    margin: 2px 0;
+    width: 120px;
+}
+.card .content .btn {
+    display: block;
+    text-align: left;
+    margin: 5px 0;
+}
+.card .content .btn button {
+    background: #e74c3c;
+    color: #fff;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    font-size: 7px;
+    padding: 2px 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.card .content .btn button:hover {
+    transform: scale(0.9);
+}
+/*=============================================
+ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
+=============================================*/
+
+@media (min-width:1200px){
+
+	.banner{
+		height:260px;
+	}
+
+
+}
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+
+	.banner{
+		height:260px;
+	}
+
+}
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+
+	.banner{
+		height:180px;
+	}
+
+	.textoBanner h1{
+		font-size:30px;
+		line-height:15px;
+	}
+
+	.textoBanner h2{
+		font-size:25px;
+		line-height:15px;
+	}
+
+	.textoBanner h3{
+		font-size:25px;
+		line-height:15px;
+	}
+
+	.banner .textoDer, .banner .textoIzq, .banner .textoCentro{
+		top:35px;
+	}
+
+
+}
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+@media (max-width:767px){
+
+	.banner{
+		height:100px;
+	}
+
+	.banner .textoDer, .banner .textoCentro, .banner .textoIzq{
+		top:7px;
+		left:50%;
+		width:800px;
+		margin-left: -400px;
+		text-align:center;
+		text-shadow:2px 2px 20px black;
+	}
+
+	.textoBanner h1{
+		font-size:20px;
+		line-height:5px;
+	}
+
+	.textoBanner h2{
+		font-size:20px;
+		line-height:5px;
+	}
+
+	.textoBanner h3{
+		font-size:15px;
+		line-height:5px;
+	}
+
+	.tituloDestacado h1{
+		text-align:center;
+	}
+
+	.tituloDestacado button{
+		position: absolute;
+		left:50%;
+		width:40%;
+		margin-left:-20%;
+
+	}
+
+}

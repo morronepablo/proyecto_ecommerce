@@ -1,0 +1,657 @@
+@charset "UTF-8";
+/*================================================
+GLOBAL
+================================================*/
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Ubunt', sans-serif; }
+
+ul, ol {
+  padding: 0px; }
+
+a:visited, a:link, a:focus, a:hover, a:active {
+  list-style: none;
+  text-decoration: none; }
+
+.barraSuperior {
+  background: black; }
+
+.barraSuperior a {
+  color: white; }
+
+.backColor, .backColor a {
+  background: #47bac1;
+  color: white; }
+
+/*================================================
+REDES SOCIALES
+================================================*/
+.redSocial {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px; }
+
+/*================================================
+FOOTER
+================================================*/
+.main-content {
+  color: #d9d9d9; }
+
+footer {
+  bottom: 0px;
+  width: 100%;
+  background: #111; }
+
+.main-content {
+  display: flex; }
+
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px; }
+
+.box h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.box .content {
+  margin: 20px 0 0 0;
+  position: relative; }
+
+.box .content:before {
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a; }
+
+.box .content:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px; }
+
+.left .content p {
+  text-align: justify; }
+
+.left .content .social {
+  margin: 20px 0 0 0; }
+
+.left .content .social a {
+  padding: 0 2px;
+  text-decoration: none;
+  color: #d9d9d9; }
+
+.left .content .social a span {
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s; }
+
+.left .content .social a span:hover {
+  background: #f12020; }
+
+.center .content .fa {
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer; }
+
+.center .content .fa:hover {
+  background: #f12020; }
+
+.center .content .text {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px; }
+
+.center .content .phone {
+  margin: 10px 0; }
+
+.right form .text {
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565; }
+
+.right form .msg {
+  margin-top: 10px; }
+
+.right form input, .right form textarea {
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222; }
+
+.right form input:focus,
+.right form textarea:focus {
+  outline-color: #3498db; }
+
+.right form input {
+  height: 35px; }
+
+.right form .btn2 {
+  margin-top: 10px; }
+
+.right form .btn2 button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s; }
+
+.right form .btn2 button:hover {
+  background: #000; }
+
+.bottom center {
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515; }
+
+.bottom center span {
+  color: #656565; }
+
+.bottom center a {
+  color: #f12020;
+  text-decoration: none; }
+
+.bottom center a:hover {
+  text-decoration: underline; }
+
+@media screen and (max-width: 767px) {
+  footer {
+    position: relative;
+    bottom: 0px; }
+  .main-content {
+    flex-wrap: wrap;
+    flex-direction: column; }
+  .main-content .box {
+    margin: 5px 0; } }
+
+/*=============================================
+ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
+=============================================*/
+@media (min-width: 1200px) {
+  .col-lg-0 {
+    display: none; } }
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+@media (max-width: 1199px) and (min-width: 992px) {
+  .col-md-0 {
+    display: none; } }
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+@media (max-width: 991px) and (min-width: 768px) {
+  .col-sm-0 {
+    display: none; } }
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+@media (max-width: 767px) {
+  .col-xs-0 {
+    display: none; }
+  .barraInferior {
+    padding-top: 2px;
+    font-size: 12px; } }
+
+/*================================================
+TOP
+================================================*/
+#top ul {
+  padding-top: 8px; }
+  #top ul li {
+    display: inline;
+    line-height: 30px;
+    margin: 0px 5px;
+    color: white; }
+
+.social ul li a i {
+  font-size: 18px;
+  margin: 0 1px; }
+
+.registro ul {
+  text-align: right;
+  font-size: 12px; }
+
+/*================================================
+HEADER
+================================================*/
+header #logotipo img {
+  padding: 20px 60px;
+  padding-left: 0px; }
+
+header #btnCategorias {
+  margin: 20px 0; }
+  header #btnCategorias p {
+    line-height: 40px;
+    margin-bottom: 0px; }
+    header #btnCategorias p span {
+      cursor: pointer; }
+
+header #buscador {
+  margin: 20px 0; }
+  header #buscador input {
+    padding: 19px;
+    border-radius: 0; }
+  header #buscador button {
+    padding: 9px;
+    border: 1px solid silver;
+    border-radius: 0; }
+
+header #carrito {
+  margin: 20px 0; }
+  header #carrito button {
+    padding: 9px 15px;
+    border: 1px solid silver;
+    border-radius: 0; }
+  header #carrito p {
+    padding: 2px;
+    border: 1px solid #aaa;
+    padding-left: 60px;
+    font-size: 12px; }
+
+header #categorias {
+  display: none;
+  margin-top: -10px;
+  position: relative;
+  padding-bottom: 20px; }
+  header #categorias h4 {
+    margin-top: 20px;
+    margin-bottom: -10px; }
+  header #categorias hr {
+    border: 1px solid rgba(255, 255, 255, 0.3); }
+
+/*=============================================
+ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
+=============================================*/
+@media (min-width: 1200px) {
+  /*================================================
+    HEADER
+    ================================================*/
+  header #logotipo img {
+    padding: 20px 60px;
+    padding-left: 0px; }
+  header #carrito {
+    padding-left: 100px; } }
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+@media (max-width: 1199px) and (min-width: 992px) {
+  /*================================================
+    HEADER
+    ================================================*/
+  header #logotipo img {
+    padding: 25px 60px;
+    padding-left: 0px; }
+  header #carrito {
+    padding-left: 70px; } }
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+@media (max-width: 991px) and (min-width: 768px) {
+  /*================================================
+    HEADER
+    ================================================*/
+  header #logotipo img {
+    padding: 30px 0px; }
+  header #carrito {
+    padding-left: 55px; }
+  header #carrito p {
+    display: none; } }
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+@media (max-width: 767px) {
+  /*=============================================
+    TOP
+    =============================================*/
+  #top ul {
+    text-align: center; }
+  #top #registro {
+    border-top: 1px solid #222; }
+  /*================================================
+    HEADER
+    ================================================*/
+  header #logotipo img {
+    padding: 30px;
+    padding-bottom: 10px; }
+  header #categorias {
+    margin-bottom: 10px; }
+  header #buscador {
+    margin-bottom: 10px; }
+  header #carrito {
+    margin: 0px; } }
+
+/*=============================================
+SLIDE
+=============================================*/
+#btnSlide {
+  width: 150px;
+  border: 0px;
+  font-size: 25px;
+  padding: 2px; }
+
+/*=============================================
+BANNER
+=============================================*/
+.banner {
+  position: relative;
+  overflow: hidden; }
+
+.banner .textoBanner {
+  position: absolute;
+  font-family: 'Ubuntu Condensed', sans-serif; }
+
+.banner .textoDer {
+  top: 50px;
+  right: 50px;
+  text-align: right; }
+
+.banner .textoIzq {
+  top: 50px;
+  left: 50px;
+  text-align: left; }
+
+.banner .textoCentro {
+  top: 50px;
+  left: 50%;
+  width: 800px;
+  margin-left: -400px;
+  text-align: center; }
+
+.textoBanner h1 {
+  font-size: 35px;
+  line-height: 25px; }
+
+.textoBanner h2 {
+  font-size: 30px;
+  line-height: 25px; }
+
+.textoBanner h3 {
+  font-size: 24px;
+  line-height: 25px; }
+
+/*=============================================
+BARRA PRODUCTOS
+=============================================*/
+.barraProductos .organizarProductos span {
+  margin-left: 5px; }
+
+/*=============================================
+VITRINA PRODUCTOS CUADRÍCULA
+=============================================*/
+.tituloDestacado h1 {
+  margin-top: -5px; }
+
+.tituloDestacado button span {
+  margin-left: 5px; }
+
+.productos ul li figure {
+  overflow: hidden; }
+
+.productos ul li div.precio {
+  padding: 0;
+  margin-top: -30px;
+  padding-bottom: 20px; }
+
+.productos ul li div.enlaces {
+  padding: 0;
+  padding-bottom: 20px; }
+  .productos ul li div.enlaces button {
+    margin: 2px; }
+    .productos ul li div.enlaces button i {
+      color: #999; }
+
+.productos ul li h4 small {
+  color: #777;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500; }
+  .productos ul li h4 small a {
+    color: #777; }
+
+.productos ul li a img:hover {
+  transition: .3s all ease;
+  opacity: .8;
+  transform: scale(1.1, 1.1); }
+
+.oferta {
+  text-decoration: line-through;
+  color: #ccc;
+  font-size: 15px; }
+
+.fontSize {
+  font-size: 11px; }
+
+.slider {
+  max-width: 500px;
+  margin-top: 5px;
+  display: flex; }
+
+.slider .card {
+  background: #fff;
+  width: 145px;
+  margin: 0 0px; }
+
+.slider .card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.slider .card .content {
+  padding: 5px 10px; }
+
+.card .content .title {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600; }
+
+.card .content .sub-title {
+  text-align: center;
+  font-size: 9px;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 10px; }
+
+.card .content p {
+  font-size: 7px;
+  text-align: justify;
+  margin: 2px 0;
+  width: 120px; }
+
+.card .content .btn {
+  display: block;
+  text-align: left;
+  margin: 5px 0; }
+
+.card .content .btn button {
+  background: #e74c3c;
+  color: #fff;
+  margin-left: 30px;
+  border: none;
+  outline: none;
+  font-size: 7px;
+  padding: 2px 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s; }
+
+.card .content .btn button:hover {
+  transform: scale(0.9); }
+
+/*=============================================
+ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
+=============================================*/
+@media (min-width: 1200px) {
+  .banner {
+    height: 260px; } }
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+@media (max-width: 1199px) and (min-width: 992px) {
+  .banner {
+    height: 260px; } }
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+@media (max-width: 991px) and (min-width: 768px) {
+  .banner {
+    height: 180px; }
+  .textoBanner h1 {
+    font-size: 30px;
+    line-height: 15px; }
+  .textoBanner h2 {
+    font-size: 25px;
+    line-height: 15px; }
+  .textoBanner h3 {
+    font-size: 25px;
+    line-height: 15px; }
+  .banner .textoDer, .banner .textoIzq, .banner .textoCentro {
+    top: 35px; } }
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+@media (max-width: 767px) {
+  .banner {
+    height: 100px; }
+  .banner .textoDer, .banner .textoCentro, .banner .textoIzq {
+    top: 7px;
+    left: 50%;
+    width: 800px;
+    margin-left: -400px;
+    text-align: center;
+    text-shadow: 2px 2px 20px black; }
+  .textoBanner h1 {
+    font-size: 20px;
+    line-height: 5px; }
+  .textoBanner h2 {
+    font-size: 20px;
+    line-height: 5px; }
+  .textoBanner h3 {
+    font-size: 15px;
+    line-height: 5px; }
+  .tituloDestacado h1 {
+    text-align: center; }
+  .tituloDestacado button {
+    position: absolute;
+    left: 50%;
+    width: 40%;
+    margin-left: -20%; } }
+
+/*=============================================
+INFO-PRODUCTO
+=============================================*/
+.infoproducto figure.visor img {
+  display: none;
+  cursor: crosshair; }
+
+.infoproducto figure.visor img:first-child {
+  display: block; }
+
+.flexslider {
+  cursor: pointer; }
+
+.margenBoton {
+  color: white; }
+
+.lupa {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden; }
+
+.lupa img {
+  position: relative;
+  margin-top: -100%;
+  margin-left: -50%;
+  width: 160%; }
+
+.compartirRedes {
+  border: 0px;
+  box-shadow: none;
+  margin: 0px; }
+
+.compartirRedes li p {
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  padding: 8px;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer; }
+
+.btnFacebook {
+  background: #46639f; }
+
+.btnGoogle {
+  background: #d6513e; }
+
+.alturaComentarios {
+  height: 300px; }
+
+/*=============================================
+ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
+=============================================*/
+@media (min-width: 1200px) {
+  .videoPresentacion {
+    height: 415px; } }
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+@media (max-width: 1199px) and (min-width: 992px) {
+  .videoPresentacion {
+    height: 350px; } }
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+@media (max-width: 991px) and (min-width: 768px) {
+  .videoPresentacion {
+    height: 300px; }
+  .botonesCompra button {
+    margin: 5px 0; } }
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+@media (max-width: 767px) {
+  .videoPresentacion {
+    height: 200px; }
+  .fondoBreadcrumb {
+    font-size: 12px; }
+  .botonesCompra button {
+    margin: 5px 0; } }
