@@ -224,7 +224,7 @@
   ======================================-->
 
   <div class="container contenedorSlider">
-    <div id="myCarousel" class="carousel slide contenedorSlider__carousel" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators contenedorSlider__indicador">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -266,7 +266,7 @@
 
   <center>
   	<button id="btnSlide" class="backColor">
-  			<i class="fa fa-angle-up"></i>
+  			<i id="flechaSlide" class="fa fa-angle-up"></i>
   	</button>
   </center>
   <!--=====================================
@@ -288,22 +288,7 @@
   BARRA DE PRODUCTOS GRATIS
   ======================================-->
   <div class="container-fluid well well-sm barraProductos">
-  	<div class="container">
-  		<div class="row">
-  			<div class="col-xs-12 organizarProductos">
-  				<div class="btn-group pull-right">
-  					<button type="button" class="btn btn-default btnGrid" id="btnGrid0">
-  						<i class="fa fa-th" aria-hidden="true"></i>
-  						<span class="col-xs-0 pull-right"> GRID</span>
-  					</button>
-  					<button type="button" class="btn btn-default btnList" id="btnList0">
-  						<i class="fa fa-list" aria-hidden="true"></i>
-  						<span class="col-xs-0 pull-right"> LIST</span>
-  					</button>
-  				</div>
-  			</div>
-  		</div>
-  	</div>
+
   </div>
   <!--=====================================
   =========================================
@@ -324,13 +309,7 @@
   					<h1><small>ARTÍCULOS GRATUITOS </small></h1>
   				</div>
   				<!--================================================-->
-  				<div class="col-sm-6 col-xs-12">
-  					<a href="#">
-  						<button class="btn btn-default backColor pull-right">
-  							VER MÁS <span class="fa fa-chevron-right"></span>
-  						</button>
-  					</a>
-  				</div>
+
   				<!--================================================-->
   			</div>
   			<div class="clearfix"></div>
@@ -489,22 +468,7 @@
   =========================================
   ======================================-->
   <div class="container-fluid well well-sm barraProductos">
-  	<div class="container">
-  		<div class="row">
-  			<div class="col-xs-12 organizarProductos">
-  				<div class="btn-group pull-right">
-  					<button type="button" class="btn btn-default btnGrid" id="btnGrid1">
-  						<i class="fa fa-th" aria-hidden="true"></i>
-  						<span class="col-xs-0 pull-right"> GRID</span>
-  					</button>
-  					<button type="button" class="btn btn-default btnList" id="btnList1">
-  						<i class="fa fa-list" aria-hidden="true"></i>
-  						<span class="col-xs-0 pull-right"> LIST</span>
-  					</button>
-  				</div>
-  			</div>
-  		</div>
-  	</div>
+
   </div>
   <!--=====================================
   VITRINA DE PRODUCTOS MÁS VENDIDOS
@@ -521,13 +485,6 @@
   					<h1><small>LO MÁS VENDIDO </small></h1>
   				</div>
   				<!--================================================-->
-  				<div class="col-sm-6 col-xs-12">
-  					<a href="#">
-  						<button class="btn btn-default backColor pull-right">
-  							VER MÁS <span class="fa fa-chevron-right"></span>
-  						</button>
-  					</a>
-  				</div>
   				<!--================================================-->
   			</div>
   			<div class="clearfix"></div>
@@ -707,22 +664,7 @@
   =========================================
   ======================================-->
   <div class="container-fluid well well-sm barraProductos">
-  	<div class="container">
-  		<div class="row">
-  			<div class="col-xs-12 organizarProductos">
-  				<div class="btn-group pull-right">
-  					<button type="button" class="btn btn-default btnGrid" id="btnGrid2">
-  						<i class="fa fa-th" aria-hidden="true"></i>
-  						<span class="col-xs-0 pull-right"> GRID</span>
-  					</button>
-  					<button type="button" class="btn btn-default btnList" id="btnList2">
-  						<i class="fa fa-list" aria-hidden="true"></i>
-  						<span class="col-xs-0 pull-right"> LIST</span>
-  					</button>
-  				</div>
-  			</div>
-  		</div>
-  	</div>
+
   </div>
   <!--=====================================
   VITRINA DE PRODUCTOS MÁS VISTOS
@@ -739,13 +681,6 @@
   					<h1><small>LO MÁS VISTO </small></h1>
   				</div>
   				<!--================================================-->
-  				<div class="col-sm-6 col-xs-12">
-  					<a href="#">
-  						<button class="btn btn-default backColor pull-right">
-  							VER MÁS <span class="fa fa-chevron-right"></span>
-  						</button>
-  					</a>
-  				</div>
   				<!--================================================-->
   			</div>
   			<div class="clearfix"></div>
@@ -997,8 +932,12 @@
     <script>
         let btnCategorias = document.getElementById('btnCategorias');
         let categorias = document.getElementById('categorias');
+        let btnSlider = document.getElementById('btnSlide');
+        let contenedorSlider = document.getElementById('myCarousel')
+        let flechaSlider = document.getElementById('flechaSlide')
         contador = 0;
-
+        slideContador = 0;
+        
         function cambio() {
             if (contador == 0) {
                 categorias.style.display = "block";
@@ -1008,7 +947,20 @@
                 contador = 0;
             }
         }
+        function slideClick() {
+            if (slideContador == 0) {
+                contenedorSlider.style.display = "none";
+                $("#btnSlide").html('<i class="fa fa-angle-down"></>');
+                slideContador = 1;
+            } else {
+                contenedorSlider.style.display = "block";
+                $("#btnSlide").html('<i class="fa fa-angle-up"></>');
+                slideContador = 0;
+            }
+        }
         btnCategorias.addEventListener('click', cambio, true)
+        btnSlide.addEventListener('click', slideClick, true)
+               
     </script>
 </body>
 
