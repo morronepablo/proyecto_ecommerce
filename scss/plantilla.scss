@@ -2,12 +2,28 @@
 GLOBAL
 ================================================*/
 
+/* Colores base */
+
+$Negro : black;
+$Blanco : white;
+$Rojo : #f12020;
+
 *{
     margin: 0px;
     padding: 0px;
     list-style: none;
     text-decoration: none;
     font-family: 'Ubunt', sans-serif;
+}
+
+.container{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+}
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
 }
 
 ul, ol{
@@ -20,16 +36,16 @@ a:visited, a:link, a:focus, a:hover, a:active{
 }
 
 .barraSuperior{
-    background: black;
+    background: $Negro;
 }
 
 .barraSuperior a{
-    color: white;
+    color: $Blanco;
 }
 
 .backColor, .backColor a{
     background: #47bac1;
-    color: white;
+    color: $Blanco;
 }
 
 /*================================================
@@ -83,7 +99,7 @@ footer {
   content: '';
   height: 2px;
   width: 15%;
-  background: #f12020;
+  background: $Rojo;
   top: -10px;
 }
 .left .content {
@@ -107,7 +123,7 @@ footer {
                 transition: 0.3s;
             }
             span:hover {
-                background: #f12020;
+                background: $Rojo;
             }
         }
     }
@@ -131,7 +147,7 @@ footer {
         cursor: pointer;
     }
     .fa:hover {
-        background: #f12020;
+        background: $Rojo;
     }
     .phone {
         margin : 10px 0;
@@ -174,7 +190,7 @@ footer {
   width: 100%;
   border: none;
   outline: none;
-  background: #f12020;
+  background: $Rojo;
   font-size: 1.0625rem;
   font-weight: 500;
   cursor: pointer;
@@ -192,7 +208,7 @@ footer {
   color: #656565;
 }
 .bottom center a {
-  color: #f12020;
+  color: $Rojo;
   text-decoration: none;
 }
 .bottom center a:hover {

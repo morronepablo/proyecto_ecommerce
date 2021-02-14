@@ -4,7 +4,6 @@ TOP
 
 #top ul {
     padding-top: 8px;
-
     li {
         display: inline;
         line-height: 30px;
@@ -33,75 +32,61 @@ TOP
 HEADER
 ================================================*/
 
-header #logotipo img {
-    padding: 20px 60px;
-    padding-left: 0px;
-}
-
-header #btnCategorias {
-    margin: 20px 0;
-
-    p {
-        line-height: 40px;
-        margin-bottom: 0px;
-
-        span {
-            cursor: pointer;
+header {
+    #logotipo img {
+        padding: 20px 60px;
+        padding-left: 0px;
+    }
+    #btnCategorias {
+        margin: 20px 0;
+        p {
+            line-height: 40px;
+            margin-bottom: 0px;
+            span {
+                cursor: pointer;
+            }
+        }
+    }
+    #buscador {
+        margin: 20px 0;
+        input {
+            padding: 19px;
+            border-radius: 0;
+        }
+        button {
+            padding: 9px;
+            border: 1px solid silver;
+            border-radius: 0;
+        }
+    }
+    #carrito {
+        margin: 20px 0;
+        button {
+            padding: 9px 15px;
+            border: 1px solid silver;
+            border-radius: 0;
+        }
+        p {
+            padding: 2px;
+            border: 1px solid #aaa;
+            padding-left: 60px;
+            font-size: 12px;
+        }
+    }
+    #categorias {
+        display: none;
+        margin-top: -10px;
+        position: relative;
+        padding-bottom: 20px;
+        h4 {
+            margin-top: 20px;
+            margin-bottom: -10px;
+        }
+        hr {
+            border: 1px solid rgba(255, 255, 255, .3);
         }
     }
 }
-
-header #buscador {
-    margin: 20px 0;
-
-    input {
-        padding: 19px;
-        border-radius: 0;
-    }
-
-    button {
-        padding: 9px;
-        border: 1px solid silver;
-        border-radius: 0;
-    }
-}
-
-header #carrito {
-    margin: 20px 0;
-
-    button {
-        padding: 9px 15px;
-        border: 1px solid silver;
-        border-radius: 0;
-    }
-
-    p {
-        padding: 2px;
-        border: 1px solid #aaa;
-        padding-left: 60px;
-        font-size: 12px;
-    }
-}
-
-header #categorias {
-    display: none;
-    margin-top: -10px;
-    position: relative;
-    padding-bottom: 20px;
-
-    h4 {
-        margin-top: 20px;
-        margin-bottom: -10px;
-    }
-
-    hr {
-        border: 1px solid rgba(255, 255, 255, .3);
-    }
-}
-
-/*================================================
-VENTANAS MODALES
-================================================*/
 
 /*=============================================
 VENTANAS MODALES
@@ -109,13 +94,12 @@ VENTANAS MODALES
 
 .modalTitulo{
 	padding:5px 0px;
-}
-
-.modalTitulo h3{
-	text-align:center;
-	margin-top:-5px;
-	padding:15px 0px;
-	border-radius:5px 5px 0px 0px;
+    h3{
+        text-align:center;
+        margin-top:-5px;
+        padding:15px 0px;
+        border-radius:5px 5px 0px 0px;
+    }
 }
 
 .modalFormulario .close{
@@ -125,9 +109,6 @@ VENTANAS MODALES
 	color:white;
 }
 
-.modalFormulario .facebook, .modalFormulario .google{
-	cursor:pointer;
-}
 
 .modalFormulario .facebook p{
 	background:#46639f;

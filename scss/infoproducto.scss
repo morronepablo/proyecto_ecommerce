@@ -25,13 +25,12 @@ INFO-PRODUCTO
     top: 0;
     left: 0;
     overflow: hidden;
-}
-
-.lupa img{
-    position: relative;
-    margin-top: -100%;
-    margin-left: -50%;
-    width: 160%;
+    img{
+        position: relative;
+        margin-top: -100%;
+        margin-left: -50%;
+        width: 160%;
+    }
 }
 
 .compartirRedes{

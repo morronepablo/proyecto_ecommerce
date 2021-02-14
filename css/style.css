@@ -2,12 +2,22 @@
 /*================================================
 GLOBAL
 ================================================*/
+/* Colores base */
 * {
   margin: 0px;
   padding: 0px;
   list-style: none;
   text-decoration: none;
   font-family: 'Ubunt', sans-serif; }
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%; }
 
 ul, ol {
   padding: 0px; }
@@ -278,29 +288,22 @@ header #categorias {
   header #categorias hr {
     border: 1px solid rgba(255, 255, 255, 0.3); }
 
-/*================================================
-VENTANAS MODALES
-================================================*/
 /*=============================================
 VENTANAS MODALES
 =============================================*/
 .modalTitulo {
   padding: 5px 0px; }
-
-.modalTitulo h3 {
-  text-align: center;
-  margin-top: -5px;
-  padding: 15px 0px;
-  border-radius: 5px 5px 0px 0px; }
+  .modalTitulo h3 {
+    text-align: center;
+    margin-top: -5px;
+    padding: 15px 0px;
+    border-radius: 5px 5px 0px 0px; }
 
 .modalFormulario .close {
   position: absolute;
   right: 27px;
   top: 15px;
   color: white; }
-
-.modalFormulario .facebook, .modalFormulario .google {
-  cursor: pointer; }
 
 .modalFormulario .facebook p {
   background: #46639f; }
@@ -632,12 +635,11 @@ INFO-PRODUCTO
   top: 0;
   left: 0;
   overflow: hidden; }
-
-.lupa img {
-  position: relative;
-  margin-top: -100%;
-  margin-left: -50%;
-  width: 160%; }
+  .lupa img {
+    position: relative;
+    margin-top: -100%;
+    margin-left: -50%;
+    width: 160%; }
 
 .compartirRedes {
   border: 0px;
@@ -702,9 +704,8 @@ CARRITO DE COMPRAS
 =============================================*/
 .cabeceraCarrito {
   height: 40px; }
-
-.cabeceraCarrito h3 {
-  margin-top: -5px; }
+  .cabeceraCarrito h3 {
+    margin-top: -5px; }
 
 .cabeceraCheckout {
   height: 66px; }
